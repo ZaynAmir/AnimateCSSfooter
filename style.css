@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    font-size: 1.125rem;
+}
+
+
+#main {
+    height: 70vh;
+    width: 100%;
+}
+
+footer {
+    background-image: linear-gradient(to right, #082032, #5089C6 );
+    padding: 1.2rem;
+    border-radius: 70px 0px 0px 0px ;
+    
+}
+
+#logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+#content-box {
+    margin-top: 70px;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+    flex: 1
+}
+
+.footer-section:nth-of-type(1) {
+    flex:1.5;
+}
+
+.footer-section:nth-of-type(3) {
+    flex:0.5;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul a {
+    text-decoration:none;
+    color: #fefefe;
+}
+
+.title {
+    text-align: left;
+}
+
+.info {
+    padding: 10px 0;
+}
+.info i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-section form input[type="email"] {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    max-width: 350px;
+    width: 100%;
+    font-size: 17px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+
+.footer-section form button{
+    color: inherit;
+    background:linear-gradient(to right, #5089C6, #082032 );
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 17px;
+}
+
+.footer-section .info:hover, .footer-section a:hover {
+    transition: font-size 0.3s 0.2s;
+    font-size: 1.2rem;
+}
+
+
+
+hr {
+    width: 85%;
+    margin: 2.5rem auto 0 auto;
+}
+
+
+#copyright {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.slider {
+    margin: 10px 0 25px 0;
+    border-radius: 3px;
+    width: 100px;
+    height: 10px;
+    background-color: #fefefe;
+    position: relative;
+    overflow:hidden;
+    
+}
+
+.box {
+    border-radius: 50% ;
+    width: 20px;
+    height: 20px;
+    background-color: #0B2538;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes slide{
+    0% {left : 0px;}
+    100% {left : 85px;}
+}
